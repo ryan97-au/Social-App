@@ -1,0 +1,180 @@
+/*
+QUT Capstone Project 2017
+Project Owner: Nursery Road State Special School
+
+SNAP - Social Networking Action Platform
+
+Author: Robert Piper
+Author: Heath Mayocchi
+Author: Levinard Hugo
+Author: David Mackenzie
+*/
+
+.wrapper {
+	background-color: #84c1ff;
+	color: black;
+	text-align: center;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2 {
+	text-align: center;
+}
+.admin_button {
+	background: #19D74F;
+	color: #000;
+	height: 45px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+  	cursor: pointer;
+}
+#back_btn2 {
+	float: left;
+	margin-right: -122px;
+}
+#filter_post {
+	float: left;
+	text-align: left;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 40px;
+	background-color: #FFF;
+}
+#filter_post p {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+#filter_post input {
+	width: 150px;
+}
+#filter_post button {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+#filter_post_title {
+	margin-top: 5px;
+}
+#post_list {
+	text-align: left;
+}
+#post_list tr:hover{
+    background-color: #19D74F;
+}
+#post_list td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom:  2px solid #000;
+}
+#post_list td:last-child{
+  border-right: none;
+}
+#post_list_box {
+	height: 550px;
+	width: 545px;
+	background-color: #FFF;
+	overflow-y: auto;
+	margin-left: 190px;
+	margin-top: 2px;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+#post_list_header {
+	margin-top: 35px;
+	margin-left: 240px;
+}
+#post_list_header_table th {
+	padding-right: 150px;
+}
+#post_list_header_table th:last-child {
+	padding-right: 0px;
+}
+#post_preview {
+	margin-left: 750px;
+	margin-top: -555px;
+	background-color: #FFF;
+	width: 320px;
+	height: 550px;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+#post_image_preview {
+	width: 210px;
+	height: 210px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin-left: 53px;
+	margin-top: -10px;
+	background-color: #ecf0f1;
+}
+#post_image_preview img{
+	margin-top: 5px;
+	max-width: 200px;
+	max-width: 200px;
+}
+#preview_title {
+	margin-top: 10px;
+	font-weight: bold;
+}
+#comments_title {
+	margin-top: 10px;
+	font-weight: bold;	
+}
+#post_comments_table_box {
+	max-height: 245px;
+	overflow-y: scroll;
+	border-top:  2px solid #000;
+	margin-top: -15px;
+}
+#post_comments td:last-child{
+	width: 300px;	
+	text-align: left;
+	padding-left: 5px;
+}
+#post_comments tr:hover{
+    background-color: #19D74F;
+}
+#post_comments td{
+	border-bottom:  2px solid #000;  
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+tr.selected {
+    background-color: #19D74F;
+}
+.delete_button {
+	background: #ff6b6b;
+	color: #000;
+	height: 65px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+  	cursor: pointer;
+	margin-top: 20px;
+}
+.load_button {
+	background: #19D74F;
+	color: #000;
+	height: 65px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+  	cursor: pointer;
+	margin-top: 20px;
+}
+#load_post {
+	margin-left: 160px;	
+}
+#delete_post {
+	margin-left: 100px;
+}
+#delete_comment {
+	margin-left: 200px;
+}

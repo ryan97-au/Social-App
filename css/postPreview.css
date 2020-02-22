@@ -1,0 +1,333 @@
+.bts {
+	background-color: #ff6b6b;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.wrapper {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.top {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 10px;
+	color: white;
+}
+
+#mainBox {
+	width: 590px;
+	margin: 35px auto 0 auto;
+	border: 0px solid #ecf0f1;
+	border-radius: 10px;
+	height: 412px;
+	background-color: #ecf0f1;
+	position: relative;
+	display: block;
+}
+
+#boxBackground{
+	border: 0.1px hidden black;
+	width: 98%;
+	height: 100%;
+	background-color: #ecf0f1;
+	margin: 0 auto;
+	position: relative;
+}
+#cancelPicBtn: focus {
+	
+}
+#selectedPicture {
+	position: absolute;
+	display: none;
+	width: 70%;
+	height: 300px;
+	margin-left: 15%;
+	margin-top: 20px;
+}
+
+/*	This is the css for default size of the textarea	*/
+.textBig {
+	display: block;
+	outline: none;
+	position: absolute;
+	resize: none;
+	text-align: center;
+	margin-top: 160px;
+	height: 37%;
+	width: 99%;
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	background-color: transparent;
+	border-style: none;
+	transition: 0.3s;
+	overflow: auto;
+	padding-left: 8px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*	This is the css that will be toggled for the text area when the user decides to select a picture	*/
+.textSmall {
+	display: block;
+	outline: none;
+	color: black;
+	position: absolute;
+	text-align: left;
+	padding-left: 90px;
+	border-radius: 10px; /* 10px */
+	margin-top: 328px;
+	margin-left: 0px;
+	width: 480px;
+	height: 71px;
+	z-index: 0;
+	font-size: 25px;
+	font-weight: bold;
+	transition: 0.3s;
+	padding-top: 3px;
+	overflow: auto;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	resize: none;
+}
+
+#boxBackground textarea::placeholder {
+	color: black;
+}
+
+
+#boxUserImage{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	float: left;
+	border-radius: 55px;
+	border: 1px solid #021a40;
+	z-index: 1;
+    bottom: 11px;
+	left: 10px;
+}
+
+#boxDate {
+	position: absolute;
+	font-size: 20px;
+	font-weight: normal;
+	bottom: 7px;
+    right: 10px;
+    z-index: 1;
+	color: black;
+}
+
+
+.modal {
+	position: absolute;
+	border: 1px hidden black;
+	width: 100%;
+	height: 76.5%;
+	background-color: #000;
+	transition: all 1s;
+	margin-top: 5px;
+}
+
+.modal button {
+	outline: none;
+}
+
+.hideModal {
+	/*	Apparently display can't be animated, so I have to use visibility and opacity to animate display	*/
+	visibility: hidden;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+/*
+.modal img {
+	float: left;
+	margin-top: 0px;
+	margin-left: 4%;
+	width: 26%;
+	height: 120px;
+	border: 8px solid transparent;
+}		*/
+
+.pictureClass {
+	float: left;
+	margin-top: 0px;
+	margin-left: 4%;
+	width: 26%;
+	height: 120px;
+	border: 8px solid transparent;
+}
+
+.pictureClass:hover {
+	border: 8px dashed #ff6b6b;
+	transition: 0.3s;
+}
+
+
+.imageHover {
+	border: 8px dashed #ff6b6b;
+	transition: 0.3s;
+}
+
+.fuck {
+	border: 8px dashed green;
+	transition: 0.3s;
+}
+
+/*		This is the style that will be applied when the user clicks on a picture.
+		Think of it as a focus		*/
+#imageSelected {
+	border: 8px solid #ff6b6b;
+	transition: 0.3s;
+}
+
+.vrum {
+	border: 8px solid white;
+	transition: 0.3s;
+}
+
+#cancelPicButton {
+	float: right;
+	margin-right: 17px;
+	background-color: #ffff00;
+	height: 36px;
+	width: 125px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+#selectPicButton {
+	float: right;
+	margin-right: 15px;
+	background-color: #ffff00;
+	height: 36px;
+	width: 125px;
+	border-radius: 10px;
+	font-size: 20px;
+	visibility: hidden;
+	
+}
+#selectPicButton:hover, #cancelPicButton:hover {
+	background-color: #ff6b6b;
+	font-weight: bold;
+	transition: 0.1s;
+}
+#selectPicButton:focus, #cancelPicButton:focus {
+	background-color: #ff6b6b;
+	font-weight: bold;
+	transition: 0.1s;
+}
+
+#post_back_btn {
+	float: left;
+	margin-right: -122px;
+}
+#post_back_btn:focus {
+	float: left;
+	margin-right: -142px;
+	margin-bottom: -20px;
+}
+
+#postButtons {
+	margin-top: -10px;
+    display: block;
+}
+#postCommentButton {
+	float: left;
+	margin-left: 200px;
+}
+#pictureBtn {
+	float: center;
+}
+#reactButtonPost {
+	float: right;
+	margin-right: 200px;
+}
+#postCommentButton:focus {
+	position: relative;
+    top: -10px;
+	left: -10px;
+	margin-right: -20px;
+}
+#pictureBtn:focus {
+	position: relative;
+    top: -10px;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+#reactButtonPost:focus {
+	position: relative;
+    top: -10px;
+	right: -10px;
+	margin-left: -20px;
+}
+
+.upload {
+	position: relative;
+	height: 140px;
+	width: 590px;
+	margin: 45px auto 0 auto;
+	border: 1px hidden white;
+}
+
+.uploadVisibility {
+	visibility: hidden;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+#uploadLocalTitle {
+	margin-top: 4px;
+}
+
+.uploadURL {
+	width: 380px;
+	height: 24px;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+}
+
+#mainBox #boxBackground #postSubmit #uploadLocal {
+	position: absolute;
+	bottom: -152px;
+	left: 100px;
+	width: 380px;
+	height: 26px;
+	font-size: 20px;
+	outline: none;
+	background-color: white;
+	z-index: 1;
+}
+
+#mainBox #boxBackground #postSubmit #hiddenSubmit {
+	visibility: hidden;
+}
+
+#mainBox #boxBackground #postSubmit #hiddenUploadURL {
+	visibility: hidden;
+}
+
+
+#errorMSG {
+	position: absolute;
+	width: 580px;
+	height: 30px;
+	background-color: red;
+	margin-left: 260px;
+	padding-top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 1px 0px 6px #7c0909;
+	background-color: #990000;
+	visibility: hidden;
+}
+
+h2 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

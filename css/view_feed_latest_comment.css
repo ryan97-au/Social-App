@@ -1,0 +1,48 @@
+#latestCommentSection {
+	margin-left: 5.5%;
+	color: black;
+	position: relative;
+	left: 18%;
+}
+
+.latestCommentBar {
+	border: 1px solid #7f8c8d;
+	width: 56%;
+	height: 80px;
+	background-color: #ecf0f1;
+	position: relative;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.latestCommentPicture img {
+	width: 80px;
+	height: 70px;
+	border: 1px solid #021a40;
+	margin-left: 5px;
+	margin-top: 4px;
+	float: left;
+}
+
+.latestCommentContent {
+	margin-left: 95px;
+	margin-top: 4px;
+	border: 0.2px hidden black;
+	width: 75%;
+	height: 55px;
+	font-weight: bold;
+	font-size: 1.1em;
+	overflow: auto;
+	text-align: left;
+	position: absolute;
+}
+
+.latestCommentDate {
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 5;
+}
+

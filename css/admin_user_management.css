@@ -1,0 +1,472 @@
+/*
+QUT Capstone Project 2017
+Project Owner: Nursery Road State Special School
+
+SNAP - Social Networking Action Platform
+
+Author: Robert Piper
+Author: Heath Mayocchi
+Author: Levinard Hugo
+Author: David Mackenzie
+*/
+
+.wrapper {
+	background-color: #84c1ff;
+	color: black;
+	text-align:left;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section { 
+	margin-top: 50px;
+}
+
+
+#add_friend_btn {
+	position: absolute;
+	background-color: #19D74F;
+	height: 60px;
+	width: 125px;
+	right: 40px;
+	top: 15px;
+	color: #000;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+}
+
+/* #add_friend_btn:hover {
+	background-color: #27a34a;
+	transition: 0.3s;
+	color: #f4f9f6;
+	box-shadow: inset 0 0 10px #000000;
+} */
+
+
+#remove_friend_btn {
+	position: absolute;
+	background-color: #ff6b6b;
+	height: 60px;
+	width: 125px;
+	right: 40px;
+	top: 85px;
+	color: #000;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+}
+
+/* #remove_friend_btn:hover {
+	background-color: #800000;
+	transition: 0.3s;
+	color: #f4f9f6;
+	box-shadow: inset 0 0 10px #000000;
+} */
+
+#editingody {
+	background-color: white;
+	margin: 10px;
+}
+
+#friendList {
+	position: absolute;
+	background-color: white;
+	margin-left: 190px;	
+	width: 700px;
+	height: 320px;
+	border: 2px solid black;
+	margin-top: 30px;
+	border-radius: 50px;
+}
+
+#friendListInnerDiv {
+	position: absolute;
+	background-color: white;
+	left: 10px;
+	width: 500px;
+	height: 320px;
+	overflow: auto;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+#profileText {
+	position: absolute;
+	right: 450px;
+	top: 200px;
+} 
+
+#profileImage {
+	position: absolute;
+	right: 600px;
+	top: 200px;
+}
+
+#browse_btn{
+	position: absolute;
+	background-color: #19D74F;
+	right: 440px;
+	top: 260px;
+	height: 30px;
+}
+
+.smallText {
+	font-size: 15px;
+	height: 15px;
+}
+
+table {
+	position: absolute;
+	left: 0px;
+}
+td {
+	padding: 10px;
+}
+
+.friendProfilePicture {
+	height: 60px;
+	width: 60px;
+}
+
+
+/*************************************************************************************************/
+
+header h2 {
+	text-align: center;
+}
+
+
+/****************************************************************/
+.midBody {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border: 0px none #b8b8b5;
+	border-radius: 10px;
+	height: 470px;
+	background-color: #84c1ff;
+	position: relative;
+	display: block;
+}
+
+.midBody p {
+	padding-top: 10px;
+	margin-left: 60px;
+	font-size: 16px;
+}
+
+
+/*********** FORM POSITIONS ********************/
+#editUserFormPosition {
+	margin-left: 60px;
+	padding-right: 98px;
+}
+
+#firstNameFormPosition {
+	margin-left: 60px;
+	padding-right: 89.1px;
+}
+
+#lastNameFormPosition {
+	margin-left: 60px;
+	padding-right: 91.5px;
+}
+
+#dateFormPosition {
+	margin-left: 60px;
+	padding-right: 131.83px;
+}
+
+#checkBoxPosition {
+	margin-left: 60px;
+	padding-right: 120px;
+}
+
+#passwordPosition {
+	margin-left: 60px;
+	padding-right: 10px;
+}
+#password {
+	width: 200px;
+	height: 20px;
+	border: 2px solid #DCDCDC;
+	border-radius: 2px;
+	outline: none;	
+}
+#confirmPassword {
+	position: relative;
+	width: 200px;
+	height: 20px;
+	border: 2px solid #DCDCDC;
+	border-radius: 2px;
+	outline: none;	
+	top: -47px;
+}
+
+#confirmPasswordPosition {
+	position: relative;
+	margin-left: 400px;
+	padding-right: 10px;
+	top: -47px;
+}
+
+/*********** FORM POSITIONS ********************/
+
+.formSize {
+	width: 260px;
+	height: 20px;
+	border: 2px solid #DCDCDC;
+	border-radius: 2px;
+	outline: none;
+}
+
+.onlyForEditUser {
+	width: 260px;
+	height: 20px;
+	border: 2px solid #DCDCDC;
+	border-radius: 2px;
+	outline: none;
+	overflow-y: hidden;
+}
+
+.adminButtons {
+	background: #19D74F;
+	color: #000;
+	height: 45px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+  	cursor: pointer;
+}
+
+/* .adminButtons:hover {
+	background-color: #27a34a;
+	transition: 0.3s;
+	color: #f4f9f6;
+	box-shadow: inset 0 0 10px #000000;
+} */
+
+#searchButton {
+	position: absolute;
+	margin-left: 40px;
+	margin-top: -10px;
+}
+
+#loadUserButton {
+	position: absolute;
+	margin-left: 205px;
+	margin-top: -10px;
+}
+
+/******************************* Picture image, Profile Image label, and Browse *******************************/
+#pictureForUpload {
+	position: absolute;
+	margin-top: -330px;
+	margin-left: 645px;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+#labelForBrowse {
+	font-size: 20px;
+	position: absolute;
+	margin-top:  -360px;
+	margin-left: 640px;
+}
+
+#chooseAFile {
+	position: absolute;
+	margin-top:  -220px;
+	margin-left: 635px;
+    color: black;
+    background: #19D74F;
+	color: #000;
+	height: 30px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+}
+
+/* #chooseAFile:hover {
+	background-color: #27a34a;
+	transition: 0.3s;
+	color: #f4f9f6;
+	box-shadow: inset 0 0 10px #000000;
+} */
+
+#fileTypeError {
+	position: absolute;
+	margin-top: -116px;
+	margin-left: -40px; 
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.midBody #chooseAFile {
+	line-height: -50px;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+#uploadPicture {
+	visibility: hidden;
+}
+
+#registerHiddenSubmitButton {
+	visibility: hidden;
+}
+
+#saveUser {
+	position: absolute;
+	margin-left: 470px;
+	margin-top: -25px;
+}
+
+#saveUser:hover{
+	height: 45px;
+	width: 125px;
+}
+
+#editingBody .midBody #passwordError, #passwordError1, #dobError, #lastNameError, #firstNameError{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#firstNameError, #lastNameError, #dobError {
+	margin-left: 246.5px;
+}
+#passwordError1 {	
+	margin-left: 160px;
+} 
+#passwordError {
+	position: relative;
+	top: 417px;
+	left: 573px;
+}
+#password_text {
+	margin-top: 5px;
+}
+
+/**********	Create a new user messages **********/
+#createUserReport {
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#createUserReport {
+	margin-top: -500px;
+	margin-left: 170px;
+	color: #66ff66;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 120px;
+	padding-right: 120px;
+	box-shadow: 1px 0px 6px black;
+	background-color: #006600;
+	visibility: hidden;
+}
+
+#createUserReportError {
+	z-index: 1;
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#createUserReportError {
+	margin-top: -500px;
+	margin-left: 170px;
+	color: #ff4d4d;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 27px;
+	width: 450px;
+	box-shadow: 1px 0px 6px black;
+	background-color: #990000;
+}
+
+#errorMessage {
+	margin-left: 20px;
+	margin-top: 3px;
+}
+
+
+/*************************************		Everything below are new id's and classes created beyond September 5, 2017			*****************************************************/
+/*************************************		Everything below are new id's and classes created beyond September 5, 2017			*****************************************************/
+#back_btn2 {
+	background: #19D74F;
+	color: #000;
+  	cursor: pointer;
+	height: 45px;
+	width: 125px;
+	font-size: 20px;
+	border-radius: 10px;
+	float: left;
+	margin-right: -122px;
+	outline: none;
+}
+
+/* #back_btn2:hover {
+	background-color: #e6e600;
+	transition: 0.3s;
+	box-shadow: inset 0 0 10px #000000;
+	border: 2px solid black;
+} */
+
+#searchResults {
+	font-size: 14px;
+	position: absolute;
+	border: 1px solid grey;
+	width: 263px;
+	height: 155px;
+	margin-left: 244px;
+	background-color: white;
+	overflow: auto;
+	border-radius: 4px;
+}
+
+#searchResults {
+	display: none;
+}
+
+.smallPic {
+	width: 20px;
+	height: 20px;
+}
+
+.userResults {
+	width: 263px;
+	height: 24px;
+	border: 1px none black;
+}
+
+.userResults:hover {
+	background: #1E8449;
+	transition: 0.2s;
+}
+
+/* #editUserForm {
+	padding-left: 30px;
+} */
+
+#editUserPicture {
+	position: absolute;
+	margin-left: 252px;
+	margin-top: 3.8px;
+}
